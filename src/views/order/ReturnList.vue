@@ -30,11 +30,16 @@
             <div class="name line1">{{ cart.productInfo.store_name }}</div>
             <div class="num">x {{ cart.cart_num }}</div>
           </div>
+
           <div class="attr line1" v-if="cart.productInfo.attrInfo">
             {{ cart.productInfo.attrInfo.suk }}
           </div>
           <div class="attr line1" v-else>{{ cart.productInfo.store_name }}</div>
-          <div class="money">￥{{ cart.productInfo.price }}</div>
+
+          <div class="money" v-if="cart.productInfo.attrInfo">
+            ￥{{ cart.productInfo.attrInfo.price }}
+          </div>
+          <div class="money" v-else>￥{{ cart.productInfo.price }}</div>
         </div>
       </div>
       <div class="totalSum">

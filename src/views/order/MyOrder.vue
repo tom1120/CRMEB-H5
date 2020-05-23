@@ -255,7 +255,8 @@ export default {
       loading: false,
       orderList: [],
       pay: false,
-      payType: ["yue", "weixin"],
+      //      payType: ["yue", "weixin"],
+      payType: ["yue"],
       from: isWeixin() ? "weixin" : "weixinh5"
     };
   },

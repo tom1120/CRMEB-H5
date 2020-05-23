@@ -7,6 +7,9 @@ function resolve(dir) {
 }
 
 module.exports = {
+  devServer: {
+    disableHostCheck: true
+  },
   assetsDir: "h5",
   configureWebpack: config => {
     Object.assign(config.resolve.alias, {

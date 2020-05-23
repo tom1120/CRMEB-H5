@@ -58,7 +58,7 @@
     </div>
     <OrderGoods :evaluate="0" :cartInfo="orderGroupInfo.cartInfo"></OrderGoods>
     <div class="wrapper">
-      <div
+      <!--      <div
         class="item acea-row row-between-wrapper"
         @click="couponTap"
         v-if="deduction === false"
@@ -68,8 +68,8 @@
           {{ usableCoupon.coupon_title || "请选择" }}
           <span class="iconfont icon-jiantou"></span>
         </div>
-      </div>
-      <div class="item acea-row row-between-wrapper" v-if="deduction === false">
+      </div>-->
+      <!--      <div class="item acea-row row-between-wrapper" v-if="deduction === false">
         <div>积分抵扣</div>
         <div class="discount">
           <div class="select-btn">
@@ -87,8 +87,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div
+      </div>-->
+      <!--      <div
         class="item acea-row row-between-wrapper"
         v-if="
           orderGroupInfo.priceGroup.vipPrice > 0 &&
@@ -101,7 +101,7 @@
       >
         会员优惠
         <div class="discount">￥{{ orderGroupInfo.priceGroup.vipPrice }}</div>
-      </div>
+      </div>-->
       <div class="item acea-row row-between-wrapper" v-if="shipping_type === 0">
         <div>快递费用</div>
         <div class="discount">
@@ -146,7 +146,7 @@
       <div class="item">
         <div>支付方式</div>
         <div class="list">
-          <div
+          <!--          <div
             class="payItem acea-row row-middle"
             :class="active === 'weixin' ? 'on' : ''"
             @click="payItem('weixin')"
@@ -160,8 +160,8 @@
               微信支付
             </div>
             <div class="tip">微信快捷支付</div>
-          </div>
-          <div
+          </div>-->
+          <!--          <div
             class="payItem acea-row row-middle"
             :class="active === 'weixin' ? 'on' : ''"
             @click="payItem('weixin')"
@@ -175,7 +175,7 @@
               微信支付
             </div>
             <div class="tip">微信快捷支付</div>
-          </div>
+          </div>-->
           <div
             class="payItem acea-row row-middle"
             :class="active === 'yue' ? 'on' : ''"

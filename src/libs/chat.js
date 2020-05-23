@@ -33,6 +33,7 @@ Socket.prototype = {
     }, 10000);
   },
   send: function(data) {
+    console.error(JSON.stringify(data));
     return this.ws.send(JSON.stringify(data));
   },
   onMessage: function(res) {

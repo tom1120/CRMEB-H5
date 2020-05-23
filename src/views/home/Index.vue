@@ -57,7 +57,7 @@
         </swiper>
       </div>
     </div>
-    <div
+    <!--    <div
       class="specialArea acea-row row-between-wrapper"
       v-if="activityOne.wap_link !== undefined || activity.length"
     >
@@ -86,7 +86,7 @@
           </div>
         </router-link>
       </div>
-    </div>
+    </div>-->
     <div class="wrapper" v-if="info.fastList.length > 0">
       <div class="title acea-row row-between-wrapper">
         <div class="text">
@@ -238,12 +238,12 @@
       </div>
     </div>
     <Promotion-good :benefit="benefit"></Promotion-good>
-    <Coupon-window
+    <!--    <Coupon-window
       :coupon-list="couponList"
       v-if="showCoupon"
       @checked="couponClose"
       @close="couponClose"
-    ></Coupon-window>
+    ></Coupon-window>-->
     <div style="height:1.2rem;"></div>
   </div>
 </template>
@@ -252,7 +252,7 @@ import { swiper, swiperSlide } from "vue-awesome-swiper";
 import "@assets/css/swiper.min.css";
 import GoodList from "@components/GoodList";
 import PromotionGood from "@components/PromotionGood";
-import CouponWindow from "@components/CouponWindow";
+//import CouponWindow from "@components/CouponWindow";
 import { getHomeData, getShare } from "@api/public";
 import cookie from "@utils/store/cookie";
 import { openShareAll } from "@libs/wechat";
@@ -266,8 +266,8 @@ export default {
     swiper,
     swiperSlide,
     GoodList,
-    PromotionGood,
-    CouponWindow
+    PromotionGood
+    //    CouponWindow
   },
   props: {},
   data: function() {

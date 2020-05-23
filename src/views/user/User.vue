@@ -30,7 +30,7 @@
           <div>我的余额</div>
           <div class="num">{{ userInfo.now_money || 0 }}</div>
         </router-link>
-        <router-link
+        <!--        <router-link
           :to="'/user/user_promotion'"
           class="item"
           v-if="userInfo.is_promoter === 1 || userInfo.statu === 2"
@@ -45,7 +45,7 @@
         <router-link :to="'/user/user_coupon'" class="item">
           <div>优惠券</div>
           <div class="num">{{ userInfo.couponCount || 0 }}</div>
-        </router-link>
+        </router-link>-->
       </div>
       <div class="myOrder">
         <div class="title acea-row row-between-wrapper">

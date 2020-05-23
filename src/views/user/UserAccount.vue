@@ -8,9 +8,9 @@
               <div>总资产(元)</div>
               <div class="money">{{ now_money }}</div>
             </div>
-            <router-link :to="'/user/Recharge'" class="recharge font-color-red"
+            <!--            <router-link :to="'/user/Recharge'" class="recharge font-color-red"
               >充值</router-link
-            >
+            >-->
           </div>
           <div class="cumulative acea-row row-top">
             <div class="item">
@@ -37,12 +37,12 @@
           <div class="pictrue"><img src="@assets/images/record3.png" /></div>
           <div>充值记录</div>
         </router-link>
-        <router-link class="item" :to="'/user/integral'">
+        <!--        <router-link class="item" :to="'/user/integral'">
           <div class="pictrue"><img src="@assets/images/record4.png" /></div>
           <div>积分中心</div>
-        </router-link>
+        </router-link>-->
       </div>
-      <div class="advert acea-row row-between-wrapper">
+      <!--      <div class="advert acea-row row-between-wrapper">
         <router-link
           class="item acea-row row-between-wrapper"
           :to="'/user/sign'"
@@ -63,8 +63,8 @@
           </div>
           <div class="pictrue"><img src="@assets/images/money.png" /></div>
         </router-link>
-      </div>
-      <div class="list">
+      </div>-->
+      <!--      <div class="list">
         <div class="item acea-row row-between-wrapper">
           <div class="picTxt acea-row row-between-wrapper">
             <div class="iconfont icon-hebingxingzhuang"></div>
@@ -113,7 +113,7 @@
           >
           <div class="bnt end" v-else>已结束</div>
         </div>
-      </div>
+      </div>-->
     </div>
     <Recommend></Recommend>
   </div>

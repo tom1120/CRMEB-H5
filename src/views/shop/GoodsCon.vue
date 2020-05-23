@@ -148,11 +148,12 @@
         <div class="buy" @click="tapBuy">立即购买</div>
       </div>
     </div>
-    <Share-red-packets
+    <!--屏蔽分享赚佣金-->
+    <!--    <Share-red-packets
       :priceName="priceName"
       v-on:changeFun="changeFun"
       v-if="priceName !== 0"
-    ></Share-red-packets>
+    ></Share-red-packets>-->
     <CouponPop v-on:changeFun="changeFun" :coupon="coupon"></CouponPop>
     <Product-window v-on:changeFun="changeFun" :attr="attr"></Product-window>
     <StorePoster
@@ -412,7 +413,7 @@ export default {
     swiperSlide,
     ProductConSwiper,
     UserEvaluation,
-    ShareRedPackets,
+    //    ShareRedPackets,
     CouponPop,
     ProductWindow,
     StorePoster,
